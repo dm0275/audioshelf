@@ -4,8 +4,8 @@ services:
     ports:
       - 13378:80
     volumes:
-      - ${HOME}/audioshelf/audiobooks:/audiobooks
-      - ${HOME}/audioshelf/config:/config
-      - ${HOME}/audioshelf/metadata:/metadata
+      - /mnt/disk0/audioshelf/audiobooks:/audiobooks
+      - ./config:/config
+      - ./metadata:/metadata
     environment:
       - TZ=America/Chicago
